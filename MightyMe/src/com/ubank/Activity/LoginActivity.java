@@ -13,6 +13,9 @@ import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 
+/**
+ * @author gayasuddin
+ * */
 public class LoginActivity extends Activity {
 
 	@Override
