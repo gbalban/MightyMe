@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">MightyMe</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    
+
+    <string name="loginheader">Please login to U-Bank Mobile Banking</string>
+    <string name="loginname">Login Name</string>
+    <string name="loginpassword">Password</string>
+    <string name="loginbtn">Login</string>
+    <string name="black">#000000</string>
+    <string name="message">Thanks for Login.. please wait....</string>
+
+</resources>

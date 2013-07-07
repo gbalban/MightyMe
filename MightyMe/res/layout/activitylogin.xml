@@ -1,0 +1,79 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".LoginActivity" >
+
+    <TextView
+        android:id="@+id/loginheader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/loginheader"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+     <TextView
+        android:id="@+id/loginlabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:labelFor="@+id/logintext"
+        android:text="@string/loginname"
+        android:textSize="12sp"
+        android:textStyle="normal" />
+
+    <TextView
+        android:id="@+id/passwordlabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/loginlabel"
+        android:layout_marginTop="20dp"
+        android:labelFor="@+id/txtpassword"
+        android:text="@string/loginpassword"
+        android:textSize="12sp"
+        android:textStyle="normal" />
+
+    <EditText
+        android:id="@+id/txtpassword"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_alignBaseline="@+id/passwordlabel"
+        android:layout_alignBottom="@+id/passwordlabel"
+        android:layout_alignLeft="@+id/logintext"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:textSize="12sp"
+        android:textStyle="normal" />
+
+    <EditText
+        android:id="@+id/logintext"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/loginheader"
+        android:layout_toRightOf="@+id/loginlabel"
+        android:ems="10"
+        android:inputType="text"
+        android:textSize="12sp"
+        android:textStyle="normal" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/btnlogin"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="30dp"
+        android:layout_alignRight="@+id/loginheader"
+        android:layout_below="@+id/txtpassword"
+        android:text="@string/loginbtn"
+        android:textSize="12sp"
+        android:textStyle="normal"
+        android:onClick="loginAccount"/>
+ 
+</RelativeLayout>
